@@ -5,22 +5,22 @@
 
   <m-cube id="casino-shadow" x="0" y="0.035" z="0.05" width="4.7" height="0.05" depth="2.0" color="#020608" opacity="0.88" collide="false"></m-cube>
 
-  <m-group id="vegas-jackpot-sign" x="0" y="4.78" z="0.7">
-    <m-cylinder id="sign-pole-left" x="-1.12" y="-0.48" z="-0.12" radius="0.035" height="0.98" color="#1B9CCB" collide="false"></m-cylinder>
-    <m-cylinder id="sign-pole-right" x="1.12" y="-0.48" z="-0.12" radius="0.035" height="0.98" color="#1B9CCB" collide="false"></m-cylinder>
-    <m-cube id="sign-backplate" x="0" y="0" z="-0.04" width="3.08" height="0.86" depth="0.12" color="#071014" collide="false"></m-cube>
-    <m-cube id="sign-face" x="0" y="0" z="0.04" width="2.86" height="0.68" depth="0.06" color="#FFF7D6" emissive="0.08" collide="false"></m-cube>
-    <m-cube id="sign-top-trim" x="0" y="0.42" z="0.1" width="3.12" height="0.07" depth="0.05" color="#73FF00" emissive="0.5" collide="false"></m-cube>
-    <m-cube id="sign-bottom-trim" x="0" y="-0.42" z="0.1" width="3.12" height="0.07" depth="0.05" color="#FF00C8" emissive="0.42" collide="false"></m-cube>
-    <m-cube id="sign-left-fin" x="-1.68" y="0" z="0.03" width="0.36" height="0.42" depth="0.08" color="#73FF00" emissive="0.24" collide="false"></m-cube>
-    <m-cube id="sign-right-fin" x="1.68" y="0" z="0.03" width="0.36" height="0.42" depth="0.08" color="#73FF00" emissive="0.24" collide="false"></m-cube>
-    <m-label id="sign-win-copy" x="0" y="0.2" z="0.14" width="2.34" height="0.17" content="WIN 1 ETH" alignment="center" font-size="17" padding="0" color="#FFF7D6" font-color="#D9182E" emissive="0.18"></m-label>
-    <m-label id="sign-mint-copy" x="0" y="0" z="0.14" width="2.38" height="0.12" content="IF YOU MINT THE" alignment="center" font-size="9" padding="0" color="#FFF7D6" font-color="#111C20" emissive="0.08"></m-label>
-    <m-label id="sign-claw-copy" x="0" y="-0.18" z="0.14" width="2.46" height="0.13" content="PIXELSAURUS CLAW 1/1" alignment="center" font-size="11" padding="0" color="#FFF7D6" font-color="#179000" emissive="0.12"></m-label>
-    <m-group id="spinning-eth-logo" x="1.62" y="0.2" z="0.2">
+  <m-group id="vegas-jackpot-sign" x="0" y="4.58" z="0.82">
+    <m-cylinder id="sign-pole-left" x="-1.05" y="-0.42" z="-0.12" radius="0.03" height="0.84" color="#1B9CCB" collide="false"></m-cylinder>
+    <m-cylinder id="sign-pole-right" x="1.05" y="-0.42" z="-0.12" radius="0.03" height="0.84" color="#1B9CCB" collide="false"></m-cylinder>
+    <m-cube id="sign-backplate" x="0" y="0" z="-0.04" width="3.12" height="0.78" depth="0.12" color="#050A0D" collide="false"></m-cube>
+    <m-cube id="sign-face" x="0" y="0" z="0.04" width="2.86" height="0.58" depth="0.06" color="#101C21" emissive="0.08" collide="false"></m-cube>
+    <m-cube id="sign-top-trim" x="0" y="0.34" z="0.1" width="3.18" height="0.06" depth="0.05" color="#73FF00" emissive="0.65" collide="false"></m-cube>
+    <m-cube id="sign-bottom-trim" x="0" y="-0.34" z="0.1" width="3.18" height="0.06" depth="0.05" color="#FF00C8" emissive="0.5" collide="false"></m-cube>
+    <m-cube id="sign-left-fin" x="-1.66" y="0" z="0.03" width="0.28" height="0.32" depth="0.08" color="#73FF00" emissive="0.28" collide="false"></m-cube>
+    <m-cube id="sign-right-fin" x="1.66" y="0" z="0.03" width="0.28" height="0.32" depth="0.08" color="#73FF00" emissive="0.28" collide="false"></m-cube>
+    <m-label id="sign-win-copy" x="0" y="0.17" z="0.14" width="2.2" height="0.16" content="WIN 1 ETH" alignment="center" font-size="16" padding="0" color="#101C21" font-color="#FFFFFF" emissive="0.42"></m-label>
+    <m-label id="sign-mint-copy" x="0" y="-0.02" z="0.14" width="2.36" height="0.11" content="IF YOU MINT THE" alignment="center" font-size="8" padding="0" color="#101C21" font-color="#8AA0A5" emissive="0.16"></m-label>
+    <m-label id="sign-claw-copy" x="0" y="-0.18" z="0.14" width="2.42" height="0.12" content="PIXELSAURUS CLAW 1/1" alignment="center" font-size="10" padding="0" color="#101C21" font-color="#73FF00" emissive="0.32"></m-label>
+    <m-group id="spinning-eth-logo" x="1.33" y="0.15" z="0.2">
       <m-attr-anim attr="ry" start="0" end="360" duration="1800" loop="true"></m-attr-anim>
-      <m-cylinder id="eth-chip" radius="0.16" height="0.04" rz="90" color="#73FF00" emissive="0.42" collide="false"></m-cylinder>
-      <m-label id="eth-symbol" z="0.05" width="0.24" height="0.18" content="Ξ" alignment="center" font-size="17" padding="0" color="#73FF00" font-color="#071014" emissive="0.22"></m-label>
+      <m-cylinder id="eth-chip" radius="0.13" height="0.04" rz="90" color="#73FF00" emissive="0.48" collide="false"></m-cylinder>
+      <m-label id="eth-symbol" z="0.05" width="0.2" height="0.15" content="Ξ" alignment="center" font-size="14" padding="0" color="#73FF00" font-color="#071014" emissive="0.25"></m-label>
     </m-group>
   </m-group>
 
