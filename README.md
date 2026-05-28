@@ -2,10 +2,10 @@
 
 Public GitHub Pages host for the PixelSaurus Claw 777 mint machine MML.
 
-MML file:
+MML URL:
 
 ```text
-pixelsaurus-claw-777-mint-machine.mml
+pixelsaurus-claw-777-mint-machine.xml
 ```
 
 Mint target:
