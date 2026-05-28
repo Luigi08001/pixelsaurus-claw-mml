@@ -1,0 +1,72 @@
+<m-group id="pixelsaurus-claw-777-mint-machine" y="0" z="0">
+  <m-light id="mint-machine-key-light" type="point" x="0" y="4.6" z="1.8" color="#FFE08A" intensity="180" distance="9"></m-light>
+  <m-light id="mint-machine-rim-light" type="point" x="-2.6" y="2.7" z="-1.5" color="#55F0FF" intensity="70" distance="7"></m-light>
+
+  <m-cube id="machine-base" x="0" y="0.35" z="0" width="3.6" height="0.7" depth="1.4" color="#241529"></m-cube>
+  <m-cube id="machine-body" x="0" y="1.75" z="0" width="3.25" height="2.85" depth="1.2" color="#5B1027"></m-cube>
+  <m-cube id="machine-face" x="0" y="1.95" z="0.63" width="2.85" height="2.25" depth="0.08" color="#111827"></m-cube>
+  <m-cube id="machine-top" x="0" y="3.35" z="0" width="3.65" height="0.55" depth="1.34" color="#CEB45A"></m-cube>
+  <m-cube id="machine-trim-left" x="-1.75" y="1.9" z="0.66" width="0.16" height="2.85" depth="0.12" color="#E7C75D"></m-cube>
+  <m-cube id="machine-trim-right" x="1.75" y="1.9" z="0.66" width="0.16" height="2.85" depth="0.12" color="#E7C75D"></m-cube>
+
+  <m-label id="machine-title" x="0" y="3.42" z="0.72" width="3.2" height="0.42" content="PIXELSAURUS CLAW" alignment="center" font-size="36" padding="2" color="#CEB45A" font-color="#1B1020" emissive="0.7"></m-label>
+  <m-label id="machine-subtitle" x="0" y="3.08" z="0.72" width="2.9" height="0.32" content="GLYPH MINT MACHINE" alignment="center" font-size="22" padding="2" color="#111827" font-color="#FFE08A" emissive="0.5"></m-label>
+
+  <m-cube id="reel-window" x="0" y="2.36" z="0.72" width="2.55" height="0.92" depth="0.08" color="#F8F2D0"></m-cube>
+  <m-cube id="reel-one-panel" x="-0.82" y="2.36" z="0.79" width="0.72" height="0.76" depth="0.06" color="#FFFFFF"></m-cube>
+  <m-cube id="reel-two-panel" x="0" y="2.36" z="0.79" width="0.72" height="0.76" depth="0.06" color="#FFFFFF"></m-cube>
+  <m-cube id="reel-three-panel" x="0.82" y="2.36" z="0.79" width="0.72" height="0.76" depth="0.06" color="#FFFFFF"></m-cube>
+  <m-label id="reel-one" x="-0.82" y="2.36" z="0.84" width="0.68" height="0.62" content="7" alignment="center" font-size="72" padding="0" color="#FFFFFF" font-color="#D9182E" emissive="0.4"></m-label>
+  <m-label id="reel-two" x="0" y="2.36" z="0.84" width="0.68" height="0.62" content="7" alignment="center" font-size="72" padding="0" color="#FFFFFF" font-color="#D9182E" emissive="0.4"></m-label>
+  <m-label id="reel-three" x="0.82" y="2.36" z="0.84" width="0.68" height="0.62" content="7" alignment="center" font-size="72" padding="0" color="#FFFFFF" font-color="#D9182E" emissive="0.4"></m-label>
+
+  <m-cube id="mint-button-shell" x="0" y="1.31" z="0.75" width="1.85" height="0.54" depth="0.16" color="#0F766E"></m-cube>
+  <m-label id="mint-button-label" x="0" y="1.31" z="0.88" width="1.76" height="0.4" content="MINT" alignment="center" font-size="34" padding="2" color="#18B7A5" font-color="#FFFFFF" emissive="0.9"></m-label>
+  <m-label id="machine-status" x="0" y="0.83" z="0.74" width="2.78" height="0.34" content="Pull lever, confirm with Glyph" alignment="center" font-size="20" padding="2" color="#171923" font-color="#E8F7FF" emissive="0.4"></m-label>
+
+  <m-cube id="lever-stem" x="2.02" y="2.0" z="0.32" width="0.12" height="1.0" depth="0.12" rz="-18" color="#D9A441"></m-cube>
+  <m-cube id="lever-handle" x="2.18" y="2.5" z="0.32" width="0.34" height="0.34" depth="0.34" color="#D9182E"></m-cube>
+  <m-label id="lever-label" x="2.1" y="1.18" z="0.62" width="0.92" height="0.28" content="PULL" alignment="center" font-size="18" padding="1" color="#241529" font-color="#FFE08A" emissive="0.3"></m-label>
+
+  <m-cube id="coin-slot" x="-1.18" y="1.48" z="0.76" width="0.58" height="0.1" depth="0.08" color="#CEB45A"></m-cube>
+  <m-label id="price-label" x="-1.18" y="1.1" z="0.74" width="0.9" height="0.26" content="0.023 ETH" alignment="center" font-size="15" padding="1" color="#111827" font-color="#FFE08A" emissive="0.3"></m-label>
+
+  <m-interaction id="glyph-mint-interaction" x="0" y="1.45" z="0.96" range="4" priority="0" prompt="Mint PixelSaurus Claw with Glyph" oninteract="spinMachine()"></m-interaction>
+  <m-interaction id="machine-lever-interaction" x="2.08" y="2.22" z="0.58" range="4" priority="1" prompt="Pull 777 lever" oninteract="spinMachine()"></m-interaction>
+
+  <m-link id="opensea-mint-link" href="https://opensea.io/collection/pixelsaurus-claw/overview" target="_blank" x="0" y="0.36" z="0.82">
+    <m-cube id="opensea-link-pad" width="2.32" height="0.28" depth="0.08" color="#2847FF"></m-cube>
+    <m-label id="opensea-link-label" z="0.08" width="2.2" height="0.22" content="OPEN OPENSEA MINT" alignment="center" font-size="16" padding="1" color="#2847FF" font-color="#FFFFFF" emissive="0.7"></m-label>
+  </m-link>
+
+  <script>
+    const reelIds = ["reel-one", "reel-two", "reel-three"];
+    const status = document.getElementById("machine-status");
+    const button = document.getElementById("mint-button-shell");
+    const glyphMintUrl = "https://opensea.io/collection/pixelsaurus-claw/overview";
+    let spins = 0;
+
+    function setReels(values) {
+      reelIds.forEach((id, index) => {
+        document.getElementById(id).setAttribute("content", values[index]);
+      });
+    }
+
+    function spinMachine() {
+      spins += 1;
+      button.setAttribute("color", spins % 2 ? "#D9182E" : "#0F766E");
+      setReels(spins % 2 ? ["P", "S", "C"] : ["7", "7", "7"]);
+      status.setAttribute("content", "Glyph mint requested");
+
+      if (globalThis.ODKGlyphMint) {
+        if (typeof globalThis.ODKGlyphMint.requestMint === "function") {
+          globalThis.ODKGlyphMint.requestMint({
+            collectionSlug: "pixelsaurus-claw",
+            mintUrl: glyphMintUrl,
+            source: "pixelsaurus-claw-777-mint-machine"
+          });
+        }
+      }
+    }
+  </script>
+</m-group>
