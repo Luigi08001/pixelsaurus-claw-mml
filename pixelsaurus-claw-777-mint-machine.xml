@@ -23,9 +23,8 @@
   <m-cube id="marquee-face" x="0" y="3.72" z="0.83" width="3.36" height="0.62" depth="0.08" color="#101C21"></m-cube>
   <m-cube id="marquee-top-lime" x="0" y="4.19" z="0.78" width="3.92" height="0.12" depth="0.16" color="#73FF00" emissive="0.62"></m-cube>
   <m-cube id="marquee-bottom-magenta" x="0" y="3.25" z="0.79" width="3.56" height="0.09" depth="0.14" color="#FF00C8" emissive="0.42"></m-cube>
-  <m-label id="logo-pixel" x="0" y="3.92" z="0.92" width="2.5" height="0.25" content="PIXEL SAURUS" alignment="center" font-size="27" padding="0" color="#101C21" font-color="#73FF00" emissive="0.82"></m-label>
-  <m-label id="logo-claw" x="0" y="3.62" z="0.93" width="1.28" height="0.2" content="CLAW" alignment="center" font-size="18" padding="0" color="#101C21" font-color="#FF8A00" emissive="0.58"></m-label>
-  <m-label id="logo-casino" x="0" y="3.39" z="0.93" width="2.3" height="0.16" content="777 MINT CASINO" alignment="center" font-size="14" padding="0" color="#101C21" font-color="#F8FAFC" emissive="0.34"></m-label>
+  <m-image id="marquee-claw-logo" src="assets/clawlogo.png" x="0" y="3.75" z="0.94" width="2.42" height="0.64" emissive="0.55" collide="false"></m-image>
+  <m-label id="logo-casino" x="0" y="3.35" z="0.95" width="2.3" height="0.16" content="777 MINT CASINO" alignment="center" font-size="14" padding="0" color="#101C21" font-color="#F8FAFC" emissive="0.34"></m-label>
 
   <m-cube id="bulb-1" x="-1.56" y="4.29" z="0.92" width="0.14" height="0.14" depth="0.08" color="#73FF00" emissive="0.9"><m-attr-anim attr="opacity" start="0.42" end="1" duration="620" loop="true" ping-pong="true"></m-attr-anim></m-cube>
   <m-cube id="bulb-2" x="-1.04" y="4.29" z="0.92" width="0.14" height="0.14" depth="0.08" color="#FF00C8" emissive="0.9"><m-attr-anim attr="opacity" start="1" end="0.42" duration="620" loop="true" ping-pong="true"></m-attr-anim></m-cube>
@@ -40,9 +39,12 @@
   <m-cube id="reel-one-panel" x="-0.82" y="2.53" z="1.06" width="0.68" height="0.66" depth="0.05" color="#F8FAE8"></m-cube>
   <m-cube id="reel-two-panel" x="0" y="2.53" z="1.06" width="0.68" height="0.66" depth="0.05" color="#F8FAE8"></m-cube>
   <m-cube id="reel-three-panel" x="0.82" y="2.53" z="1.06" width="0.68" height="0.66" depth="0.05" color="#F8FAE8"></m-cube>
-  <m-label id="reel-one" x="-0.82" y="2.53" z="1.12" width="0.58" height="0.52" content="7" alignment="center" font-size="58" padding="0" color="#F8FAE8" font-color="#73FF00" emissive="0.42"></m-label>
-  <m-label id="reel-two" x="0" y="2.53" z="1.12" width="0.58" height="0.52" content="7" alignment="center" font-size="58" padding="0" color="#F8FAE8" font-color="#73FF00" emissive="0.42"></m-label>
-  <m-label id="reel-three" x="0.82" y="2.53" z="1.12" width="0.58" height="0.52" content="7" alignment="center" font-size="58" padding="0" color="#F8FAE8" font-color="#73FF00" emissive="0.42"></m-label>
+  <m-image id="reel-one-eye" src="assets/rawr-token-whiteborder.png" x="-0.82" y="2.53" z="1.13" width="0.44" height="0.52" emissive="0.22" collide="false"></m-image>
+  <m-image id="reel-two-dino" src="assets/emoji-claw-1.png" x="0" y="2.53" z="1.13" width="0.5" height="0.5" emissive="0.18" collide="false"></m-image>
+  <m-image id="reel-three-eye" src="assets/rawr-token-whiteborder.png" x="0.82" y="2.53" z="1.13" width="0.44" height="0.52" emissive="0.22" collide="false"></m-image>
+  <m-image id="reel-one-logo" src="assets/clawlogo.png" x="-0.82" y="2.53" z="1.14" width="0.62" height="0.36" emissive="0.45" visible="false" collide="false"></m-image>
+  <m-image id="reel-two-logo" src="assets/clawlogo.png" x="0" y="2.53" z="1.14" width="0.62" height="0.36" emissive="0.45" visible="false" collide="false"></m-image>
+  <m-image id="reel-three-logo" src="assets/clawlogo.png" x="0.82" y="2.53" z="1.14" width="0.62" height="0.36" emissive="0.45" visible="false" collide="false"></m-image>
 
   <m-cube id="jackpot-bar" x="0" y="1.82" z="0.95" width="2.7" height="0.3" depth="0.09" color="#FF00C8" emissive="0.45"></m-cube>
   <m-label id="jackpot-copy" x="0" y="1.82" z="1.03" width="2.5" height="0.19" content="CLAW JACKPOT" alignment="center" font-size="18" padding="0" color="#FF00C8" font-color="#FFFFFF" emissive="0.46"></m-label>
@@ -73,7 +75,8 @@
   <m-interaction id="machine-lever-interaction" x="2.34" y="2.55" z="1.02" range="4" priority="1" prompt="Pull 777 lever" oninteract="spinMachine()"></m-interaction>
 
   <script>
-    const reelIds = ["reel-one", "reel-two", "reel-three"];
+    const idleSymbols = ["reel-one-eye", "reel-two-dino", "reel-three-eye"];
+    const mintSymbols = ["reel-one-logo", "reel-two-logo", "reel-three-logo"];
     const status = document.getElementById("machine-status");
     const wallet = document.getElementById("wallet-copy");
     const button = document.getElementById("mint-button-shell");
@@ -81,9 +84,12 @@
     const glyphMintUrl = "https://opensea.io/collection/pixelsaurus-claw/overview";
     let spins = 0;
 
-    function setReels(values) {
-      reelIds.forEach((id, index) => {
-        document.getElementById(id).setAttribute("content", values[index]);
+    function setReels(minted) {
+      idleSymbols.forEach((id) => {
+        document.getElementById(id).setAttribute("visible", minted ? "false" : "true");
+      });
+      mintSymbols.forEach((id) => {
+        document.getElementById(id).setAttribute("visible", minted ? "true" : "false");
       });
     }
 
@@ -92,7 +98,7 @@
       const ready = spins % 2 === 1;
       button.setAttribute("color", ready ? "#FF00C8" : "#73FF00");
       jackpot.setAttribute("color", ready ? "#73FF00" : "#FF00C8");
-      setReels(ready ? ["P", "S", "C"] : ["7", "7", "7"]);
+      setReels(ready);
       status.setAttribute("content", ready ? "OPENING OPENSEA" : "PIXELSAURUS AUTHENTICATION");
       wallet.setAttribute("content", ready ? "CONFIRM MINT THERE" : "GLYPH WALLET REQUIRED");
 
