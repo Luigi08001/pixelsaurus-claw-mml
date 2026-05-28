@@ -93,8 +93,8 @@
       button.setAttribute("color", ready ? "#FF00C8" : "#73FF00");
       jackpot.setAttribute("color", ready ? "#73FF00" : "#FF00C8");
       setReels(ready ? ["P", "S", "C"] : ["7", "7", "7"]);
-      status.setAttribute("content", ready ? "MINT REQUEST SENT" : "PIXELSAURUS AUTHENTICATION");
-      wallet.setAttribute("content", ready ? "CONFIRM IN GLYPH" : "GLYPH WALLET REQUIRED");
+      status.setAttribute("content", ready ? "OPENING OPENSEA" : "PIXELSAURUS AUTHENTICATION");
+      wallet.setAttribute("content", ready ? "CONFIRM MINT THERE" : "GLYPH WALLET REQUIRED");
 
       if (globalThis.ODKGlyphMint) {
         if (typeof globalThis.ODKGlyphMint.requestMint === "function") {
@@ -104,6 +104,12 @@
             source: "pixelsaurus-claw-777-mint-machine"
           });
         }
+      }
+
+      if (globalThis.open) {
+        globalThis.open(glyphMintUrl, "_blank", "noopener,noreferrer");
+      } else if (globalThis.location) {
+        globalThis.location.href = glyphMintUrl;
       }
     }
   </script>
